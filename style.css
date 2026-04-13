@@ -179,6 +179,8 @@ img {
     letter-spacing: 1px;
 }
 
+.logo-mobile { display: none; font-size: 26px; }
+
 .nav-gear-icon {
     animation: spin 8s linear infinite;
 }
@@ -1433,11 +1435,12 @@ footer {
         gap: 4px;
         transform: translateY(-120%);
         transition: var(--transition);
-        border-bottom: 1px solid var(--border);
+        border-bottom: 1px solid transparent;
     }
 
     .nav-links.open {
         transform: translateY(0);
+        border-bottom-color: var(--border);
     }
 
     .nav-links a {
@@ -1448,6 +1451,9 @@ footer {
     .nav-toggle {
         display: flex;
     }
+
+    .logo-full { display: none; }
+    .logo-mobile { display: inline; }
 
     .hero-name {
         font-size: 40px;
